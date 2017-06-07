@@ -55,7 +55,7 @@ require("inc/functions.php");
 
 </head>
 
-	<body>
+	<body class="homepagebody">
 
 		<div id="mainLogo"><img src="img/Logo.png"></div>
 		<div id="registerForm">
