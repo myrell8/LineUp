@@ -29,7 +29,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<title>LineUp</title>
 </head>
-	<body>
+	<body class="myrellbody">
 		<div id="navbar">
 		<div id="main-nav">
 			<ul>

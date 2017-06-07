@@ -11,12 +11,12 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="description" content="DatabaseTest">
-	<link rel="stylesheet" type="text/css" href="css/styleparent.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="shortcut icon" href="img/icon.png">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<title>LineUp</title>
 </head>
-	<body>
+	<body class="myrellbody">
 		<div id="navbar">
 			<img id="logo" src="img/logo.png">
 		</div>

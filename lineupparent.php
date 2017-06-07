@@ -35,12 +35,12 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="description" content="DatabaseTest">
-	<link rel="stylesheet" type="text/css" href="css/styleparent.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="shortcut icon" href="img/icon.png">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<title>LineUp</title>
 </head>
-	<body>
+	<body class="myrellbody">
 		<div id="navbar">
 			<img id="logo" src="img/logo.png">
 		</div>
@@ -64,11 +64,11 @@
 								$reward = "No reward added";
 							}
 				?>
-						<div class="itemcontainer">
+						<div class="itemcontainerparent">
 							<p class="taskname"><?php echo $content['taskName']; ?></p>
 							<label class="desclabel">Description:</label>
 							<div class="taskdesc"><?php echo $content['taskDescription']; ?></div>
-							<form action="changestatusparent.php" method="POST" class="movebuttoncontainer">
+							<form action="inc/changestatusparent.php" method="POST" class="movebuttoncontainerparent">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="In Progress" class="movebuttons">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="On Hold" class="movebuttons">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="Finished" class="movebuttons">
@@ -112,11 +112,11 @@
 								$reward = "No reward added";
 							}
 				?>
-						<div class="itemcontainer">
+						<div class="itemcontainerparent">
 							<p class="taskname"><?php echo $content['taskName']; ?></p>
 							<label class="desclabel">Description:</label>
 							<div class="taskdesc"><?php echo $content['taskDescription']; ?></div>
-							<form action="changestatusparent.php" method="POST" class="movebuttoncontainer">
+							<form action="inc/changestatusparent.php" method="POST" class="movebuttoncontainerparent">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="To Do" class="movebuttons">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="On Hold" class="movebuttons">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="Finished" class="movebuttons">
@@ -160,11 +160,11 @@
 								$reward = "No reward added";
 							}
 				?>
-						<div class="itemcontainer">
+						<div class="itemcontainerparent">
 							<p class="taskname"><?php echo $content['taskName']; ?></p>
 							<label class="desclabel">Description:</label>
 							<div class="taskdesc"><?php echo $content['taskDescription']; ?></div>
-							<form action="changestatusparent.php" method="POST" class="movebuttoncontainer">
+							<form action="inc/changestatusparent.php" method="POST" class="movebuttoncontainerparent">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="To Do" class="movebuttons">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="In Progress" class="movebuttons">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="Finished" class="movebuttons">
@@ -208,11 +208,11 @@
 								$reward = "No reward added";
 							}
 				?>
-						<div class="itemcontainer">
+						<div class="itemcontainerparent">
 							<p class="taskname"><?php echo $content['taskName']; ?></p>
 							<label class="desclabel">Description:</label>
 							<div class="taskdesc"><?php echo $content['taskDescription']; ?></div>
-							<form action="changestatusparent.php" method="POST" class="movebuttoncontainer">
+							<form action="inc/changestatusparent.php" method="POST" class="movebuttoncontainerparent">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="To Do" class="movebuttons">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="In Progress" class="movebuttons">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="On Hold" class="movebuttons">
