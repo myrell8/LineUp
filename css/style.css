@@ -1,5 +1,10 @@
+.homepagebody{
+
+	background-color: #FAFAFA;
+
+}
+
 body{
-	background-color: #465e8d;
 	color: #2F2F2F;
 	margin: 0px;
 	padding: 0px;
@@ -14,8 +19,8 @@ ul{
 	width: 300px;
 	display: block;
 	margin: 0 auto;
-	margin-top: 60px;
-	margin-bottom: 160px;
+	margin-top: 36px;
+	margin-bottom: 112px;
 }
 #loginForm
 {
@@ -82,12 +87,44 @@ ul{
 
 #btnLogin
 {
+	margin-top: 20px;
 	height: 36px;
 	width: 64px;
 	text-align: center;
 	border-style: none;
 	color: #FAFAFA;
 	background-color: #2f2f2f;
+}
+
+#registerForm
+{
+	width: 400px;
+	margin: 0 auto;
+	margin-bottom: 36px;
+}
+
+#registerList
+{
+margin-top: 30px;
+}
+
+#registerList input
+{
+	padding-left: 6px;
+	margin-bottom: 12px;
+}
+
+#registerList ul
+{
+	list-style: none;
+	margin-top: 0px;
+	padding-top: 14px;
+	padding-left: 0px;
+}
+
+#registerList ul li
+{
+	margin-bottom: 6px;
 }
 
 /* ----------------------------- MYRELL ------------------------------- */
