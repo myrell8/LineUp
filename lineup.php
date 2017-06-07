@@ -81,7 +81,7 @@
 							<p class="taskname"><?php echo $content['taskName']; ?></p>
 							<label class="desclabel">Description:</label>
 							<div class="taskdesc"><?php echo $content['taskDescription']; ?></div>
-							<form action="changestatus.php" method="POST" class="movebuttoncontainer">
+							<form action="inc/changestatus.php" method="POST" class="movebuttoncontainer">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="In Progress" class="movebuttons">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="On Hold" class="movebuttons">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="Finished" class="movebuttons">
@@ -123,7 +123,7 @@
 							<p class="taskname"><?php echo $content['taskName']; ?></p>
 							<label class="desclabel">Description:</label>
 							<div class="taskdesc"><?php echo $content['taskDescription']; ?></div>
-							<form action="changestatus.php" method="POST" class="movebuttoncontainer">
+							<form action="inc/changestatus.php" method="POST" class="movebuttoncontainer">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="To Do" class="movebuttons">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="On Hold" class="movebuttons">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="Finished" class="movebuttons">
@@ -165,7 +165,7 @@
 							<p class="taskname"><?php echo $content['taskName']; ?></p>
 							<label class="desclabel">Description:</label>
 							<div class="taskdesc"><?php echo $content['taskDescription']; ?></div>
-							<form action="changestatus.php" method="POST" class="movebuttoncontainer">
+							<form action="inc/changestatus.php" method="POST" class="movebuttoncontainer">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="To Do" class="movebuttons">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="In Progress" class="movebuttons">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="Finished" class="movebuttons">
@@ -207,7 +207,7 @@
 							<p class="taskname"><?php echo $content['taskName']; ?></p>
 							<label class="desclabel">Description:</label>
 							<div class="taskdesc"><?php echo $content['taskDescription']; ?></div>
-							<form action="changestatus.php" method="POST" class="movebuttoncontainer">
+							<form action="inc/changestatus.php" method="POST" class="movebuttoncontainer">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="To Do" class="movebuttons">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="In Progress" class="movebuttons">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="On Hold" class="movebuttons">
