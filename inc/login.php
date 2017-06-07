@@ -11,12 +11,15 @@
 		$loginResult = mysqli_query($connect, $sql);
 		if (!$row = mysqli_fetch_assoc($loginResult))
 		{
-			echo "Login failed!";
+			header("Location: ../index.php");
+			session_destroy();
 		}
 		else
 		{
 			$_SESSION['userID'] = $row['userID'];
+			$_SESSION['userName'] = $row['username'];
+			header("Location: ../lineup.php");
 		}
 
-	header("Location: ../index.php");
+
 ?>
