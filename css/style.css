@@ -158,6 +158,28 @@ p{
 	width: 100px;
 }
 
+#main-nav ul{
+	list-style: none;
+	position: absolute;
+}
+
+#main-nav a{
+	text-decoration: none;
+	color: #FAFAFA;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 36px;
+	width: 64px;
+	text-align: center;
+	border-style: none;
+	background-color: #2F2F2F;
+}
+
+#logoutButton{
+	margin-top: 14px;
+}
+
 /* --- List --- */
 
 #listcontainer{
