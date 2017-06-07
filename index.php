@@ -2,9 +2,9 @@
 
 	session_start();
 
-	if (isset($_SESSION['userID'])) {
-		header("Location: lineup.php");
-	}
+	// if (isset($_SESSION['userID'])) {
+	// 	header("Location: index.php");
+	// }
 
 	require("inc/functions.php");
 

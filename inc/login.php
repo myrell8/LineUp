@@ -5,7 +5,6 @@
 		$username = $_POST['username'];
 		$password = $_POST['password'];
 
-
 		$sql = ("SELECT * FROM user WHERE username = '$username' AND password = '$password'");
 
 		$loginResult = mysqli_query($connect, $sql);
@@ -18,7 +17,17 @@
 		{
 			$_SESSION['userID'] = $row['userID'];
 			$_SESSION['userName'] = $row['username'];
-			header("Location: ../lineup.php");
+			$_SESSION['role'] = $row['role'];
+
+			if ($_SESSION['role'] == "kind")
+			{
+
+				header("Location: ../lineup.php");
+			}
+			else
+			{
+				header("Location: ../dashboard.php");
+			}
 		}
 
 
