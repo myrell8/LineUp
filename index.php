@@ -60,7 +60,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
-	<title>LineUp</title>
+	<title>LineUp Proftaak</title>
 
 </head>
 
