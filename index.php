@@ -2,9 +2,11 @@
 
 	session_start();
 
-	if (isset($_SESSION['userID'])) {
-		header("Location: lineup.php");
-	}
+?>
+
+
+
+<?php
 
 	require("inc/functions.php");
 
@@ -67,6 +69,25 @@
 		<div id="mainLogo"><img src="img/Logo.png"></div>
 
 
+
+				<?php 
+
+					if(isset($_SESSION['userID']))
+
+					{
+
+						echo "Logged in as" + $_SESSION['userID'];
+
+					}
+
+					else {
+
+						echo "You are not logged in";
+
+					}
+
+				?>
+
 		<div id="loginForm">
 
 			<div id="loginButton"><h1>Login</h1></div>
@@ -97,7 +118,7 @@
 
 
 
-		<div id="buyButton"><a href="license.php"><h1>Purchase License</h1></a></div>
+		<div id="buyButton"><a href=""><h1>Koop</h1></a></div>
 
 
 
