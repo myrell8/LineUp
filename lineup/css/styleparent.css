@@ -169,7 +169,7 @@ p{
 	margin-top: 20px;
 	margin-bottom: 10px;
 	width: 350px;
-	height: 250px;
+	height: 300px;
 	background-color: #465e8d;
 	border-radius: 3px;
 	color: #FAFAFA;
@@ -207,7 +207,7 @@ p{
 	display: flex;
 	justify-content: space-around;
 	position: absolute;
-	bottom: 55px;
+	bottom: 105px;
 	height: 30px;
 	width: 100%;
 }
@@ -223,6 +223,14 @@ p{
 }
 .movebuttons:hover{
 	border: 3px solid #34425f;
+}
+.editbuttoncontainer{
+	display: flex;
+	justify-content: space-around;
+	position: absolute;
+	bottom: 55px;
+	height: 30px;
+	width: 100%;
 }
 .rewardlabel{
 	position: absolute;
@@ -245,13 +253,13 @@ p{
 }
 .deadlinelabel{
 	position: absolute;
-	bottom: 25px;
-	left: 170px;
+	bottom: 17px;
+	left: 160px;
 }
 .taskdeadline{
 	position: absolute;
-	bottom: 5px;
-	left: 170px;
+	bottom: 17px;
+	left: 240px;
 }
 
 /* --- Description scrollbar --- */
@@ -285,6 +293,7 @@ p{
     position: absolute;
     bottom: 50px;
     left: 5px;
+
 }
 .tooltip .tooltiptext::after {
     content: " ";
@@ -464,6 +473,14 @@ p{
 	margin: 0 auto;
 	color: white;
 }
+#edittaskcontainer{
+	position: absolute;
+	top: 150px;
+	width: 100%;
+	height: 600px;
+	margin: 0 auto;
+	color: white;
+}
 #createtasktitle{
 	height: 70px;
 	font-size: 90%;
@@ -496,4 +513,69 @@ p{
 	width: 90%;
 	height: 90%;
 	border-radius: 3px;
+}
+
+/* --- PARENTS --- */
+/* --- Dashboard --- */
+
+
+#dashboardcontainer{
+	position: absolute;
+	top: 150px;
+	width: 100%;
+	height: 600px;
+	margin: 0 auto;
+	color: white;
+}
+#dashboard{
+	width: 60%;
+	height: 600px;
+	background-color: #FAFAFA;
+	border-radius: 3px;
+	border: 3px solid #2F2F2F;
+	margin: 0 auto;
+	border-radius: 3px;
+	overflow-y: auto;
+}
+
+/* --- Dashboard Item --- */
+
+.dashboarditem{
+	position: relative;
+	display: block;
+	width: 90%;
+	height: 150px;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	background-color: #465e8d;
+}
+.childname{
+	position: absolute;
+	top: 15%;
+	left: 2%;
+	width: 96%;
+	height: 45px;
+	overflow-y: auto;
+}
+.rewardtasklabel{
+	position: absolute;
+	top: 55%;
+	left: 2%;
+}
+.rewarddatelabel{
+	position: absolute;
+	top: 55%;
+	left: 65%;
+}
+.rewardtask{
+	position: absolute;
+	top: 70%;
+	left: 2%;
+}
+.rewarddate{
+	position: absolute;
+	top: 70%;
+	left: 65%;
 }
