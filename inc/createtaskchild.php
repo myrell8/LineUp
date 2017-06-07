@@ -1,5 +1,5 @@
 <?php
-	require("inc/functions.php");
+	require("functions.php");
 	$connect = connectToDB();
 
 	if ($_POST['createbutton']) {
@@ -10,5 +10,5 @@
 
 	//echo $query;
 
-	header("Location: lineup.php");
+	header("Location: ../lineup.php");
 ?>

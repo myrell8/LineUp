@@ -1,13 +1,13 @@
 <?php
 	session_start();
 
-	require("inc/functions.php");
+	require("functions.php");
 
 	$connect = connectToDB();
 
 	if ($_POST['status'][$_POST['taskId']] == "Edit") {
 		$_SESSION['sessionTaskId'] = $_POST['taskId'];
-		header("Location: edittask.php");
+		header("Location: ../edittask.php");
 		die();
 	}
 
@@ -22,6 +22,6 @@
 
 	mysqli_query($connect, $query);
 
-	header("Location: lineupparent.php");
+	header("Location: ../lineupparent.php");
 	
 ?>

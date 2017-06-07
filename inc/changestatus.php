@@ -1,5 +1,5 @@
 <?php
-	require("inc/functions.php");
+	require("functions.php");
 
 	$connect = connectToDB();
 
@@ -9,5 +9,5 @@
 
 	mysqli_query($connect, $query);
 
-	header("Location: lineup.php");
+	header("Location: ../lineup.php");
 ?>

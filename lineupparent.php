@@ -74,7 +74,7 @@
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="Finished" class="movebuttons">
 								<input type="hidden" name="taskId" value="<?php echo $content['taskID']; ?>">
 							</form>
-							<form action="edit.php" method="POST" class="editbuttoncontainer">
+							<form action="inc/edit.php" method="POST" class="editbuttoncontainer">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="Edit" class="movebuttons">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="Delete" class="movebuttons">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="Completed" class="movebuttons">
@@ -122,7 +122,7 @@
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="Finished" class="movebuttons">
 								<input type="hidden" name="taskId" value="<?php echo $content['taskID']; ?>">
 							</form>
-							<form action="edit.php" method="POST" class="editbuttoncontainer">
+							<form action="inc/edit.php" method="POST" class="editbuttoncontainer">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="Edit" class="movebuttons">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="Delete" class="movebuttons">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="Completed" class="movebuttons">
@@ -170,7 +170,7 @@
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="Finished" class="movebuttons">
 								<input type="hidden" name="taskId" value="<?php echo $content['taskID']; ?>">
 							</form>
-							<form action="edit.php" method="POST" class="editbuttoncontainer">
+							<form action="inc/edit.php" method="POST" class="editbuttoncontainer">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="Edit" class="movebuttons">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="Delete" class="movebuttons">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="Completed" class="movebuttons">
@@ -218,7 +218,7 @@
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="On Hold" class="movebuttons">
 								<input type="hidden" name="taskId" value="<?php echo $content['taskID']; ?>">
 							</form>
-							<form action="edit.php" method="POST" class="editbuttoncontainer">
+							<form action="inc/edit.php" method="POST" class="editbuttoncontainer">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="Edit" class="movebuttons">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="Delete" class="movebuttons">
 								<input type="submit" name="status[<?php echo $content['taskID']; ?>]" value="Completed" class="movebuttons">
