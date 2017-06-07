@@ -1,10 +1,12 @@
-<?php
+<?php	
+	session_start();
 	require("inc/functions.php");
 	$connect = connectToDB();
 
 	$query = "
 		SELECT *
 		FROM task
+		WHERE userID= " . $_SESSION['userID'] . "
 		";
 
 
@@ -16,7 +18,7 @@
 			$Array[] = $result;
 		}
 
-	session_start();
+
 ?>
 
 <!DOCTYPE html>
@@ -257,7 +259,7 @@
 				<h1>Create task for ...</h1>
 			</div>
 			<div id="createtaskdiv">
-				<form action="createtaskchild.php" method="POST" id="createtaskform">
+				<form action="inc/createtaskchild.php" method="POST" id="createtaskform">
 					<label>Taskname:</label><br>
 					<input type="text" name="taskname"><br>
 					<label>TaskDescription</label><br>
