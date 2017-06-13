@@ -7,14 +7,15 @@ $lastname = $_POST['lastname'];
 $email = $_POST['email'];
 $username = $_POST['username'];
 $password = $_POST['password'];
+$reEnterPassword = $_POST['re-enter-password'];
 $childrenamount = $_POST['childrenamount'];
 $role = "ouder";
-$childrole =
 
 $sql = "INSERT INTO user (userID,firstName,lastName,email,username,password,role) VALUES('','$firstname','$lastname','$email','$username','$password','$role')";
 
 
-
+if($password == $reEnterPassword)
+{
 	if (mysqli_query($connect, $sql))
 	{
 		$ouderid = mysqli_insert_id($connect);
@@ -24,10 +25,12 @@ $sql = "INSERT INTO user (userID,firstName,lastName,email,username,password,role
 
 	}
 
+
 	$insertChildren = "INSERT INTO user (userID,username,password,role,ouderID) VALUES";
 	for($kind = 1; $kind <= $childrenamount; $kind++)
 	{
-		$insertChildren .= "(NULL,'". $username . "child" . $kind. "' , 'test', 'kind', '$ouderid'),";
+		$randomPass = generateRandomString();
+		$insertChildren .= "(NULL,'". $username . "child" . $kind. "' , '$randomPass', 'kind', '$ouderid'),";
 	}
 	$insertChildren = rtrim($insertChildren, ",");
 
@@ -36,5 +39,12 @@ $sql = "INSERT INTO user (userID,firstName,lastName,email,username,password,role
 
 // $signupQuery = mysqli_query($connect, $sql);
 $signupQueryChild = mysqli_query($connect, $insertChildren);
-	header("Location: ../index.php");
+header("Location: ../index.php");
+}
+else
+{
+header("Location: ../license.php");
+}
+	
+
 ?>

@@ -21,13 +21,14 @@ ul{
 	display: block;
 	margin: 0 auto;
 	margin-top: 36px;
-	margin-bottom: 112px;
+	margin-bottom: 64px;
 }
 #loginForm
 {
 	background-color: white;
 	width: 400px;
 	margin: 0 auto;
+	margin-top: 48px;
 	margin-bottom: 36px;
 }
 
@@ -107,7 +108,7 @@ ul{
 
 #registerList
 {
-	margin-top: 30px;
+	margin-top: 16px;
 }
 
 #registerList input

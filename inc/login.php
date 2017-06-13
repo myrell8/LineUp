@@ -21,7 +21,6 @@
 
 			if ($_SESSION['role'] == "kind")
 			{
-
 				header("Location: ../lineup.php");
 			}
 			else

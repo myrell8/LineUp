@@ -85,6 +85,10 @@ require("inc/functions.php");
 
 						<li><input type="password" id="password" name="password" placeholder="Enter Password"></li>
 
+						<li>Re-Enter Password</li>
+
+						<li><input type="password" id="re-enter-password" name="re-enter-password" placeholder="Re-Enter Password"></li>
+
 						<li>Child accounts</li>
 
 						<li><input type="number" id="childrenamount" name="childrenamount" min="1" value="1"></li>
