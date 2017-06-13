@@ -11,5 +11,5 @@
 
 	//echo $query;
 
-	header("Location: ../lineup.php");
+	header("Location: ../lineupparent.php");
 ?>
