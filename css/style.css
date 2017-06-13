@@ -670,6 +670,41 @@ p{
 	height: 45px;
 	overflow-y: auto;
 }
+.passwordlabel{
+	position: absolute;
+	top: 15%;
+	left: 35%;
+	height: 45px;
+	margin: 0px;
+	padding: 0px;
+}
+.childpassword{
+	position: absolute;
+	top: 15%;
+	left: 47%;
+	width: 40%;
+	height: 45px;
+	margin: 0px;
+	padding: 0px;
+	overflow-y: auto;
+}
+.viewbutton{
+	position: absolute;
+	top: 45%;
+	left: 2%;
+	width: 96%;
+	height: 45px;
+	display: inline-block;
+	border-radius: 3px;
+	background-color: #34425f;
+	font-size: 150%;
+	text-align: center;
+	border: 3px solid #2F2F2F;
+	color: #FAFAFA;
+}
+.viewbutton:hover{
+	background-color: #2F2F2F;
+}
 .rewardtasklabel{
 	position: absolute;
 	top: 55%;

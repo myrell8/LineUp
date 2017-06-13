@@ -1,5 +1,15 @@
 <?php
-require("inc/functions.php");
+	if(!isset($_SESSION)) 
+	    { 
+	        session_start(); 
+	    } 
+
+	    if (isset($_SESSION['userID'])) {
+			header("Location: inc/redirect.php");
+		}
+
+
+	require("inc/functions.php");
 
 	$connect = connectToDB();
 
