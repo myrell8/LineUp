@@ -26,9 +26,7 @@ require("inc/functions.php");
 		while($result = mysqli_fetch_assoc($resource))
 
 		{
-
 			$Array[] = $result;
-
 		}
 
 ?>
@@ -91,7 +89,8 @@ require("inc/functions.php");
 
 						<li><input type="number" id="childrenamount" name="childrenamount" min="1" value="1"></li>
 
-						<li><button type="submit" id="btnRegister">Register</button></li>
+						<li><button type="submit" id="btnRegister" class="registerbuttons">Register</button></li>
+						<li><button onclick="location.href = 'index.php'" class="registerbuttons">Back</button></li>
 
 					</ul>
 

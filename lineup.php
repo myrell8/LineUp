@@ -3,6 +3,12 @@
 	require("inc/functions.php");
 	$connect = connectToDB();
 
+	/*
+		if (isset($_SESSION['userID'])) {
+		header("Location: inc/redirect.php");
+	}
+	*/
+
 	$query = "
 		SELECT *
 		FROM task
@@ -17,8 +23,6 @@
 		{
 			$Array[] = $result;
 		}
-
-
 ?>
 
 <!DOCTYPE html>
@@ -40,9 +44,7 @@
 								if(isset($_SESSION['userID']))
 
 								{
-
 									echo "Logged in as" . " " . $_SESSION['userName'];
-
 								}
 
 								else {
@@ -260,11 +262,11 @@
 			</div>
 			<div id="createtaskdiv">
 				<form action="inc/createtaskchild.php" method="POST" id="createtaskform">
-					<label>Taskname:</label><br>
-					<input type="text" name="taskname"><br>
-					<label>TaskDescription</label><br>
-					<input type="text" name="taskdescription"><br>
-					<input type="submit" name="createbutton" value="Create task">
+					<h1>Taskname</h1><br>
+					<input type="text" name="taskname" id="createtaskname"><br>
+					<h1>TaskDescription</h1><br>
+					<textarea type="text" name="taskdescription" rows='17' cols='100'></textarea><br>
+					<input type="submit" id="createbutton" name="createbutton" value="Create task">
 				</form>
 			</div>
 		</div>

@@ -1,6 +1,13 @@
 <?php
+	session_start();
 	require("inc/functions.php");
 	$connect = connectToDB();
+
+	/*
+		if (isset($_SESSION['userID'])) {
+		header("Location: inc/redirect.php");
+	}
+	*/
 
 	$query = "
 		SELECT *
@@ -41,6 +48,28 @@
 </head>
 	<body class="myrellbody">
 		<div id="navbar">
+		<div id="main-nav">
+			<ul>
+				<li>
+					<?php 
+								if(isset($_SESSION['userID']))
+
+								{
+									echo "Logged in as" . " " . $_SESSION['userName'];
+								}
+
+								else {
+									header("Location: index.php");
+								}
+					?>
+
+					<div id="logoutButton">
+					<a href="inc/logout.php">Logout</a>
+					</div>
+				</li>
+
+			</ul>
+		</div>
 			<img id="logo" src="img/logo.png">
 		</div>
 

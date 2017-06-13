@@ -1,11 +1,23 @@
 <?php
+	session_start();
 	require("inc/functions.php");
 	$connect = connectToDB();
+
+	if (isset($_POST['userId'])) {
+		$_SESSION['parentchildID'] = $_POST['userId'];
+	}
+	
+
+	/*
+		if (isset($_SESSION['userID'])) {
+		header("Location: inc/redirect.php");
+	}
+	*/
 
 	$query = "
 		SELECT *
 		FROM task
-		WHERE userID = " . $_POST['userId'] . "
+		WHERE userID = " . $_SESSION['parentchildID'] . "
 		";
 
 	$userquery = "
@@ -42,6 +54,28 @@
 </head>
 	<body class="myrellbody">
 		<div id="navbar">
+		<div id="main-nav">
+			<ul>
+				<li>
+					<?php 
+								if(isset($_SESSION['userID']))
+
+								{
+									echo "Logged in as" . " " . $_SESSION['userName'];
+								}
+
+								else {
+									header("Location: index.php");
+								}
+					?>
+
+					<div id="logoutButton">
+					<a href="inc/logout.php">Logout</a>
+					</div>
+				</li>
+
+			</ul>
+		</div>
 			<img id="logo" src="img/logo.png">
 		</div>
 
@@ -268,12 +302,16 @@
 				<h1>Create task for ...</h1>
 			</div>
 			<div id="createtaskdiv">
-				<form action="createtaskchild.php" method="POST" id="createtaskform">
-					<label>Taskname:</label><br>
-					<input type="text" name="taskname"><br>
-					<label>TaskDescription</label><br>
-					<input type="text" name="taskdescription"><br>
-					<input type="submit" name="createbutton" value="Create task">
+				<form action="inc/createtaskparent.php" method="POST" id="createtaskform">
+					<h1>Taskname</h1>
+					<input type="text" name="taskname" id="createtaskname"><br>
+					<h1>TaskDescription</h1>
+					<textarea type="text" name="taskdescription" rows='10' cols='100'></textarea><br><br>
+					<h2>TaskDeadline</h2>
+					<input type="date" name="taskdeadline"><br>
+					<h2>TaskReward</h2>
+					<input type="text" name="taskreward"><br>
+					<input type="submit" id="createbutton" name="createbutton" value="Create task">
 				</form>
 			</div>
 		</div>
@@ -289,23 +327,19 @@
 					</li>
 					<li>
 						<button onclick="
-										document.getElementById('dashboardcontainer').style.visibility='hidden';
 										document.getElementById('createtaskcontainer').style.visibility='visible';
+										document.getElementById('rewardlistcontainer').style.visibility='hidden';
 							 			document.getElementById('listcontainer').style.visibility='hidden';
-							 			document.getElementById('titlecontainer').style.visibility='hidden';
-							 			document.getElementById('rewardlistcontainer').style.visibility='hidden';
-							 			">
+							 			document.getElementById('titlecontainer').style.visibility='hidden';">
 							Create Task
 						</button>
 					</li>
 					<li>
 						<button onclick="
-										document.getElementById('dashboardcontainer').style.visibility='hidden';
 										document.getElementById('createtaskcontainer').style.visibility='hidden';
 							 			document.getElementById('listcontainer').style.visibility='hidden';
 							 			document.getElementById('titlecontainer').style.visibility='hidden';
-							 			document.getElementById('rewardlistcontainer').style.visibility='visible';
-							 			">
+							 			document.getElementById('rewardlistcontainer').style.visibility='visible';">
 							Reward list
 						</button>
 					</li>

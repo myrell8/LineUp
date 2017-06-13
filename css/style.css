@@ -128,6 +128,10 @@ ul{
 {
 	margin-bottom: 6px;
 }
+.registerbuttons{
+	float: left;
+	margin-right: 10px; 
+}
 
 /* ----------------------------- MYRELL ------------------------------- */
 
@@ -582,10 +586,42 @@ p{
 	border-radius: 3px;
 }
 #createtaskform{
+	padding-top: 20px;
+	padding-left: 40px;
 	background-color: #465e8d;
 	width: 90%;
 	height: 90%;
 	border-radius: 3px;
+}
+#createtaskform h1{
+	margin: 0px;
+	padding: 0px;
+}
+#createtaskform h2{
+	margin: 0px;
+	padding: 0px;
+}
+#createtaskname{
+	height: 30px;
+	font-size: 130%;
+	margin-bottom: 10px;
+}
+#createbutton{
+	display: inline-block;
+	width: 300px;
+	height: 50px;
+	border-radius: 3px;
+	margin: 0 auto;
+	margin-top: 25px;
+	background-color: #34425f;
+	font-size: 150%;
+	text-align: center;
+	border: 3px solid #2F2F2F;
+	color: #FAFAFA;
+}
+
+#createbutton:hover{
+	background-color: #465e8d;
 }
 
 
