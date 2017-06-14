@@ -73,37 +73,37 @@
 
 		<div id="registerList">
 
-				<form action="inc/signup.php" method="POST">
+				<form id="test" action="inc/signup.php" method="POST">
 					<ul>
 						<li>First Name</li>
 
-						<li><input type="text" id="firstname" name="firstname" placeholder="Enter your first name"></li>
+						<li><input type="text" id="firstname" name="firstname" placeholder="Enter your first name" required></li>
 
 						<li>Last Name</li>
 
-						<li><input type="text" id="lastname" name="lastname" placeholder="Enter your last name"></li>
+						<li><input type="text" id="lastname" name="lastname" placeholder="Enter your last name" required></li>
 
 						<li>Email</li>
 
-						<li><input type="text" id="email" name="email" placeholder="Enter your Email"></li>
+						<li><input type="text" id="email" name="email" placeholder="Enter your Email" required></li>
 
 						<li>Username</li>
 
-						<li><input type="text" id="username" name="username" placeholder="Enter Username"></li>
+						<li><input type="text" id="username" name="username" placeholder="Enter Username" required></li>
 
 						<li>Password</li>
 
-						<li><input type="password" id="password" name="password" placeholder="Enter Password"></li>
+						<li><input type="password" id="password" name="password" placeholder="Enter Password" required></li>
 
 						<li>Re-Enter Password</li>
 
-						<li><input type="password" id="re-enter-password" name="re-enter-password" placeholder="Re-Enter Password"></li>
+						<li><input type="password" id="re-enter-password" name="re-enter-password" placeholder="Re-Enter Password" required></li>
 
 						<li>Child accounts</li>
 
-						<li><input type="number" id="childrenamount" name="childrenamount" min="1" value="1"></li>
+						<li><input type="number" id="childrenamount" name="childrenamount" min="1" max="10" value="1"></li>
 
-						<li><button type="submit" id="btnRegister" class="registerbuttons">Register</button></li>
+						<li><input type="button" id="btnRegister" class="registerbuttons" value="Register" onclick = "validateForm()"></li>
 						<li><button onclick="location.href = 'index.php'" class="registerbuttons">Back</button></li>
 
 					</ul>
