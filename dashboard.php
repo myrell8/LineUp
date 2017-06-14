@@ -52,21 +52,24 @@
 			<ul>
 				<li>
 					<?php 
-						if(isset($_SESSION['userID']))
-						{
-							echo "Logged in as" . " " . $_SESSION['userName'];
-						}
-						else 
-						{
-							header("Location: index.php");
-						}
-					?>
+								if(isset($_SESSION['userID']))
 
-					<div id="logoutButton">
-						<a href="inc/logout.php">Logout</a>
-					</div>
+								{
+									echo "Logged in as" . " " . $_SESSION['userName'];
+								}
+
+								else 
+								{
+									header("Location: index.php");
+								}
+					?>
 				</li>
 			</ul>
+
+				<div id="logoutButton"><a href="inc/logout.php">Logout</a></div>
+				<div id="aboutButton"><a href="about.php">About</a></div>
+				<div id="contactButton"><a href="contact.php">Contact</a></div>
+
 		</div>
 			<img id="logo" src="img/logo.png">
 		</div>

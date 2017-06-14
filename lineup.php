@@ -47,17 +47,18 @@
 									echo "Logged in as" . " " . $_SESSION['userName'];
 								}
 
-								else {
+								else 
+								{
 									header("Location: index.php");
 								}
 					?>
-
-					<div id="logoutButton">
-					<a href="inc/logout.php">Logout</a>
-					</div>
 				</li>
-
 			</ul>
+
+				<div id="logoutButton"><a href="inc/logout.php">Logout</a></div>
+				<div id="aboutButton"><a href="about.php">About</a></div>
+				<div id="contactButton"><a href="contact.php">Contact</a></div>
+
 		</div>
 			<img id="logo" src="img/logo.png">
 		</div>
