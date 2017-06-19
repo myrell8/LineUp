@@ -75,36 +75,16 @@
 
 				<form id="test" action="inc/signup.php" method="POST">
 					<ul>
-						<li>First Name</li>
-
-						<li><input type="text" id="firstname" name="firstname" placeholder="Enter your first name" required></li>
-
-						<li>Last Name</li>
-
-						<li><input type="text" id="lastname" name="lastname" placeholder="Enter your last name" required></li>
-
-						<li>Email</li>
-
-						<li><input type="text" id="email" name="email" placeholder="Enter your Email" required></li>
-
-						<li>Username</li>
-
-						<li><input type="text" id="username" name="username" placeholder="Enter Username" required></li>
-
-						<li>Password</li>
-
-						<li><input type="password" id="password" name="password" placeholder="Enter Password" required></li>
-
-						<li>Re-Enter Password</li>
-
-						<li><input type="password" id="re-enter-password" name="re-enter-password" placeholder="Re-Enter Password" required></li>
-
+						<li><input type="text" id="firstname" name="firstname" placeholder="Enter your first name" minlength="2" maxlength="20" required></li>
+						<li><input type="text" id="lastname" name="lastname" placeholder="Enter your last name" minlength="2" maxlength="30" required></li>
+						<li><input type="email" id="email" name="email" placeholder="Enter your Email" required></li>
+						<li><input type="text" id="username" name="username" placeholder="Enter Username" minlength="4" maxlength="15" required></li>
+						<li><input type="password" id="password" name="password" placeholder="Enter Password" min="4" max="15"  required></li>
+						<li><input type="password" id="re-enter-password" name="re-enter-password" placeholder="Re-Enter Password" min="4" max="15" required></li>
 						<li>Child accounts</li>
-
-						<li><input type="number" id="childrenamount" name="childrenamount" min="1" max="10" value="1"></li>
-
-						<li><input type="button" id="btnRegister" class="registerbuttons" value="Register" onclick = "validateForm()"></li>
-						<li><button onclick="location.href = 'index.php'" class="registerbuttons">Back</button></li>
+						<li><input type="number" id="childrenamount" name="childrenamount" min="1" max="12" value="1"></li>
+						<li><input type="submit"  class="registerbuttons" value="Register" onclick = "validateForm()"></li>
+						<li><input type="button" onclick="location.href = 'index.php'" class="registerbuttons" value="Back"></li>
 
 					</ul>
 

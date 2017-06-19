@@ -121,21 +121,26 @@ ul{
 
 #registerForm
 {
-	width: 400px;
+	width: 450px;
 	margin: 0 auto;
 	margin-bottom: 36px;
+	text-align: center;
 }
 
 #registerList
 {
-	margin-top: 16px;
+	display:flex;
+	background-color: #E95434;
+	justify-content: center;
 }
 
 #registerList input
 {
 	padding-left: 6px;
 	margin-bottom: 12px;
+	height: 24px;
 }
+
 
 #registerList ul
 {
@@ -147,11 +152,34 @@ ul{
 
 #registerList ul li
 {
-	margin-bottom: 6px;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
-.registerbuttons{
-	float: left;
-	margin-right: 10px; 
+
+.registerbuttons
+{
+	width: 140px;
+	height: 36px;
+	text-align: center;
+    border-style: none;
+    color: #FAFAFA;
+    background-color: #2f2f2f;
+}
+
+.registerbuttons li{
+	display: flex;
+	flex-direction: column;
+}
+
+#licensePurchase
+{
+	text-align: center;
+	background-color: #2f2f2f;
+	color: #FAFAFA;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 /* ----------------------------- MYRELL ------------------------------- */
