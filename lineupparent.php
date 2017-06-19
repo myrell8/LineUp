@@ -276,7 +276,7 @@
 
 		<div id="rewardlistcontainer">
 			<div id="rewardlisttitle">
-				<h1>Reward list for ...</h1>
+				<h1>Reward list</h1>
 			</div>
 			<div id="rewardlist">
 
@@ -300,12 +300,12 @@
 
 		<div id="createtaskcontainer">
 			<div id="createtasktitle">
-				<h1>Create task for ...</h1>
+				<h1>Create task</h1>
 			</div>
 			<div id="createtaskdiv">
 				<form action="inc/createtaskparent.php" method="POST" id="createtaskform">
 					<h1>Taskname</h1>
-					<input type="text" name="taskname" id="createtaskname"><br>
+					<input type="text" name="taskname" id="createtaskname" required><br>
 					<h1>TaskDescription</h1>
 					<textarea type="text" name="taskdescription" rows='10' cols='100'></textarea><br><br>
 					<h2>TaskDeadline</h2>
@@ -328,20 +328,20 @@
 					</li>
 					<li>
 						<button onclick="
+										document.getElementById('createtaskcontainer').style.visibility='hidden';
+							 			document.getElementById('listcontainer').style.visibility='visible';
+							 			document.getElementById('titlecontainer').style.visibility='visible';
+							 			document.getElementById('rewardlistcontainer').style.visibility='hidden';">
+							Show List
+						</button>
+					</li>
+					<li>
+						<button onclick="
 										document.getElementById('createtaskcontainer').style.visibility='visible';
 										document.getElementById('rewardlistcontainer').style.visibility='hidden';
 							 			document.getElementById('listcontainer').style.visibility='hidden';
 							 			document.getElementById('titlecontainer').style.visibility='hidden';">
 							Create Task
-						</button>
-					</li>
-					<li>
-						<button onclick="
-										document.getElementById('createtaskcontainer').style.visibility='hidden';
-							 			document.getElementById('listcontainer').style.visibility='hidden';
-							 			document.getElementById('titlecontainer').style.visibility='hidden';
-							 			document.getElementById('rewardlistcontainer').style.visibility='visible';">
-							Reward list
 						</button>
 					</li>
 				</ul>

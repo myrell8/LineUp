@@ -40,10 +40,10 @@
 				</div>
 			</div>
 
-		<button id="buyButton" onclick="location.href = 'license.php'">Purchase License</button>
+		<button id="buyButton" onclick="location.href = 'license.php'"><h1>Purchase License</h1></button>
 		<div id=smallButtoncontainer>
-		<div id="smallButton"><a href="about.php"><h1>About</h1></a></div>
-		<div id="smallButton"><a href="contact.php"><h1>Contact</h1></a></div>
+		<div id="smallButton"><a href="about.php"><h2>About</h2></a></div>
+		<div id="smallButton"><a href="contact.php"><h2>Contact</h2></a></div>
 		</div>
 		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 		<script src="js/main.js"></script>

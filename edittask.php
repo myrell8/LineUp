@@ -21,7 +21,6 @@
 				<li>
 					<?php 
 								if(isset($_SESSION['userID']))
-
 								{
 									echo "Logged in as" . " " . $_SESSION['userName'];
 								}
@@ -48,8 +47,8 @@
 			</div>
 			<div id="createtaskdiv">
 				<form action="inc/editmanual.php" method="POST" id="createtaskform">
-					<label>Taskname:</label><br>
-					<input type="text" name="taskname"><br>
+					<label>Taskname</label><br>
+					<input type="text" name="taskname" required><br>
 					<label>TaskDescription</label><br>
 					<input type="text" name="taskdescription"><br>
 					<label>TaskStatus</label><br>
@@ -64,7 +63,7 @@
 					<input type="date" name="taskdeadline"><br>
 					<label>TaskReward</label><br>
 					<input type="text" name="taskreward"><br>
-					<input type="submit" name="editbutton" value="Edit task">
+					<input type="submit" name="editbutton" value="Edit task" id="createbutton">
 				</form>
 			</div>
 		</div>

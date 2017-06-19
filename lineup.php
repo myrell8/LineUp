@@ -232,10 +232,10 @@
 			</div>
 			</div>
 		</div>
-
+		
 		<div id="rewardlistcontainer">
 			<div id="rewardlisttitle">
-				<h1>Reward list for ...</h1>
+				<h1>Reward list</h1>
 			</div>
 			<div id="rewardlist">
 
@@ -259,12 +259,12 @@
 
 		<div id="createtaskcontainer">
 			<div id="createtasktitle">
-				<h1>Create task for ...</h1>
+				<h1>Create task</h1>
 			</div>
 			<div id="createtaskdiv">
 				<form action="inc/createtaskchild.php" method="POST" id="createtaskform">
 					<h1>Taskname</h1><br>
-					<input type="text" name="taskname" id="createtaskname"><br>
+					<input type="text" name="taskname" id="createtaskname" required><br>
 					<h1>TaskDescription</h1><br>
 					<textarea type="text" name="taskdescription" rows='17' cols='100'></textarea><br>
 					<input type="submit" id="createbutton" name="createbutton" value="Create task">

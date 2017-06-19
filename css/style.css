@@ -75,8 +75,6 @@ ul{
 	margin: 0 auto;
 	text-align: center;
 	background-color: #2f2f2f;
-	font-weight: bold;
-	font-size: 190%;
 	color: #FAFAFA;
 }
 #smallButtoncontainer{
@@ -94,9 +92,9 @@ ul{
 	text-align: center;
 	background-color: #2f2f2f;
 }
-#smallButton h1
+#smallButton h2
 {
-	padding-top: 32px	;
+	padding-top: 15px	;
 }
 #smallButton a
 {
@@ -752,8 +750,8 @@ p{
 .viewbutton{
 	position: absolute;
 	top: 45%;
-	left: 2%;
-	width: 96%;
+	left: 25%;
+	width: 50%;
 	height: 45px;
 	display: inline-block;
 	border-radius: 3px;
@@ -766,26 +764,6 @@ p{
 .viewbutton:hover{
 	background-color: #2F2F2F;
 }
-.rewardtasklabel{
-	position: absolute;
-	top: 55%;
-	left: 2%;
-}
-.rewarddatelabel{
-	position: absolute;
-	top: 55%;
-	left: 65%;
-}
-.rewardtask{
-	position: absolute;
-	top: 70%;
-	left: 2%;
-}
-.rewarddate{
-	position: absolute;
-	top: 70%;
-	left: 65%;
-}
 
 /* --- Edit task --- */
 
@@ -796,6 +774,18 @@ p{
 	height: 600px;
 	margin: 0 auto;
 	color: white;
+}
+#edittaskcontainer label{
+	font-size: 130%;
+}
+#edittaskcontainer input{
+	margin-top: 5px;
+	margin-bottom: 10px;
+	width: 30%;
+}
+#edittaskcontainer select{
+	margin-top: 5px;
+	width: 30%;
 }
 
 /* --- About --- */
@@ -830,4 +820,37 @@ p{
 }
 #aboutBackButton h1{
 	color: #FAFAFA;
+}
+
+/* --- Contact --- */
+
+#contactformcontainer{
+	display: block;
+	width: 40%;
+	height: 350px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	background-color: #E95434;
+	color: #FAFAFA;
+	padding: 20px;
+	border: 3px black;
+	position: relative;
+}
+.contactformlabel{
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+#contactbuttoncontainer{
+	position: absolute;
+	bottom: 20px;
+	left: 20px
+}
+.contactbutton{
+	text-decoration: none;
+	color: #FAFAFA;
+	height: 36px;
+	width: 100px;
+	text-align: center;
+	border-style: none;
+	background-color: #2F2F2F;
 }
