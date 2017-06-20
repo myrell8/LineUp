@@ -221,10 +221,18 @@ p{
 	align-items: center;
 	justify-content: center;
 	height: 36px;
-	width: 100px;
+	width: 110px;
 	text-align: center;
 	border-style: none;
 	background-color: #2F2F2F;
+}
+
+
+#editButton
+{
+	position: absolute;
+	top: 50px;
+	left: 170px;
 }
 
 #logoutButton{
@@ -235,8 +243,8 @@ p{
 #aboutButton{
 	position: absolute;
 	top: 50px;
-	position: absolute;
 	right: 40px;
+	width: 110px;
 }
 #contactButton{
 	position: absolute;
