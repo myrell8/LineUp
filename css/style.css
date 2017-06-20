@@ -690,6 +690,7 @@ p{
 
 
 #dashboardcontainer{
+	visibility: hidden;
 	position: absolute;
 	top: 150px;
 	width: 100%;
@@ -707,6 +708,7 @@ p{
 	border-radius: 3px;
 	overflow-y: auto;
 }
+
 
 /* --- Dashboard Item --- */
 
@@ -732,7 +734,7 @@ p{
 .passwordlabel{
 	position: absolute;
 	top: 15%;
-	left: 35%;
+	left: 45%;
 	height: 45px;
 	margin: 0px;
 	padding: 0px;
@@ -740,7 +742,7 @@ p{
 .childpassword{
 	position: absolute;
 	top: 15%;
-	left: 47%;
+	left: 57%;
 	width: 40%;
 	height: 45px;
 	margin: 0px;
