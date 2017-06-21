@@ -76,6 +76,7 @@
 							Cancel
 						</button>
 					</li>
+				</ul>
 			</nav>
 		</div>
 	</body>

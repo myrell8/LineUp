@@ -11,33 +11,8 @@
 
 	require("inc/functions.php");
 
-	$connect = connectToDB();
+$connect = connectToDB();
 
-
-
-	$query = "
-
-		SELECT *
-
-		FROM user
-
-		";
-
-
-
-
-
-	$resource = mysqli_query($connect, $query);
-
-
-
-	$Array = array();
-
-		while($result = mysqli_fetch_assoc($resource))
-
-		{
-			$Array[] = $result;
-		}
 ?>
 
 
@@ -82,7 +57,7 @@
 						<li><input type="password" id="re-enter-password" name="re-enter-password" placeholder="Re-Enter Password" min="4" max="15" required></li>
 						<li>Child accounts</li>
 						<li><input type="number" id="childrenamount" name="childrenamount" min="1" max="12" value="1"></li>
-						<li><input type="submit"  class="registerbuttons" value="Register" onclick = "validateForm()"></li>
+						<li><input type="submit"  class="registerbuttons" name=registerbutton value="Register" onclick = "validateForm()"></li>
 						<li><input type="button" onclick="location.href = 'index.php'" class="registerbuttons" value="Back"></li>
 
 					</ul>

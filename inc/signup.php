@@ -13,7 +13,6 @@ $role = "ouder";
 
 $sql = "INSERT INTO user (userID,firstName,lastName,email,username,password,role) VALUES('','$firstname','$lastname','$email','$username','$password','$role')";
 
-
 if($password == $reEnterPassword)
 {
 	if (mysqli_query($connect, $sql))
@@ -45,6 +44,4 @@ else
 {
 header("Location: ../license.php");
 }
-	
-
 ?>

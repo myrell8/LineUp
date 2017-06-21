@@ -1,39 +1,39 @@
 <?php
 	session_start();
-
-
 	require("inc/functions.php");
-
 	$connect = connectToDB();
 
-
+	/*
+		if (isset($_SESSION['userID'])) {
+		header("Location: inc/redirect.php");
+	}
+	*/
 
 	$query = "
-
 		SELECT *
-
-		FROM user
-
+		FROM task
 		";
 
+	$userquery = "
+		SELECT *
+		FROM user
+		";
 
-
-
-
+	$userresource = mysqli_query($connect, $userquery);
 	$resource = mysqli_query($connect, $query);
 
-
-
 	$Array = array();
-
 		while($result = mysqli_fetch_assoc($resource))
-
 		{
 			$Array[] = $result;
 		}
+
+	$UserArray = array();
+		while($result = mysqli_fetch_assoc($userresource))
+		{
+			$UserArray[] = $result;
+		}
 ?>
-
-
 
 <!DOCTYPE html>
 <html>
@@ -74,21 +74,39 @@
 			<img id="logo" src="img/logo.png">
 		</div>
 
-		<div id="dashboardcontainer"> 
+		<div id="editaccountcontainer"> 
 			<div id="createtasktitle">
-				<h1></h1>
+				<h1>Edit Account</h1>
 			</div>
-<div id="dashboard">
-				
-					
+
+			<div id="editaccountdiv">
+				<form action="inc/edituser.php" method="POST" id="editaccountform">
+					<ul>
+						<li>New Username</li>
+						<li><input type="text" id="username" name="username" placeholder="Enter Username" minlength="4" maxlength="15" required></li>
+						<li>New password</li>
+						<li><input type="password" id="password" name="password" placeholder="Enter Password" min="4" max="15"  required></li>
+						<li>Re-enter new Password</li>
+						<li><input type="password" id="re-enter-password" name="re-enter-password" placeholder="Re-Enter Password" min="4" max="15" required></li>
+						<li><input type="submit" id="edituserbutton" name="editButton" value="Edit" onclick = "validateEdit()"></li>
+						<li></li>
+					</ul>
+				</form>
 			</div>
-			<div class="dashboarditem">
-					
-					</div>
+		</div>
+
 		<div id="footer">
 			<nav id="main-navigation">
-			
+			<ul>
+					<li>
+						<button onclick="location.href = 'inc/redirect.php'">
+							Cancel
+						</button>
+					</li>
+			</ul>
 			</nav>
 		</div>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>
