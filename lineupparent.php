@@ -71,7 +71,7 @@
 					?>
 				</li>
 			</ul>
-
+				<div id="editButton"><a href="editaccount.php">Edit account</a></div>
 				<div id="logoutButton"><a href="inc/logout.php">Logout</a></div>
 				<div id="aboutButton"><a href="about.php">About</a></div>
 				<div id="contactButton"><a href="contact.php">Contact</a></div>
